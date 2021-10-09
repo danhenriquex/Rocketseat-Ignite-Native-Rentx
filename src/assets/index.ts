@@ -1,0 +1,14 @@
+export { default as IconAcceleration } from "./acceleration.svg";
+export { default as IconArrow } from "./arrow.svg";
+export { default as IconBrand } from "./brand.svg";
+export { default as IconCar } from "./car.svg";
+export { default as IconDone } from "./done.svg";
+export { default as IconEnergy } from "./energy.svg";
+export { default as IconExchange } from "./exchange.svg";
+export { default as IconForce } from "./force.svg";
+export { default as IconGasoline } from "./gasoline.svg";
+export { default as IconHybrid } from "./hybrid.svg";
+export { default as IconLogoBackgroundGray } from "./logo_background_gray.svg";
+export { default as IconLogo } from "./logo.svg";
+export { default as IconPeople } from "./people.svg";
+export { default as IconSpeed } from "./speed.svg";
