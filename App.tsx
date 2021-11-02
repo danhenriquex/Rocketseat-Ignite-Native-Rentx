@@ -1,5 +1,5 @@
-import React from "react";
-import { ThemeProvider } from "styled-components";
+import "intl";
+import "intl/locale-data/jsonp/pt-BR";
 import {
   Archivo_400Regular,
   Archivo_500Medium,
@@ -11,9 +11,12 @@ import {
   useFonts,
 } from "@expo-google-fonts/inter";
 import AppLoading from "expo-app-loading";
-import { View } from "react-native";
-import { Home } from "./src/screens/Home";
-import theme from "./src/styles/theme";
+import React from "react";
+import "react-native-gesture-handler";
+import { Routes } from "routes";
+import { StackRoutes } from "routes/stack.routes";
+import { ThemeProvider } from "styled-components";
+import theme from "styles/theme";
 
 export default function App() {
   const [fontsLoaded] = useFonts({
@@ -30,7 +33,7 @@ export default function App() {
 
   return (
     <ThemeProvider theme={theme}>
-      <Home />
+      <Routes />
     </ThemeProvider>
   );
 }
