@@ -9,6 +9,7 @@ module.exports = function (api) {
           components: './src/components',
           assets: './src/assets',
           modules: './src/modules',
+          services: './src/services',
           lib: './src/lib',
           types: './src/types',
           screens: './src/screens',

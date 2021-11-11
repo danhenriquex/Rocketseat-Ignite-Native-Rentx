@@ -5,6 +5,7 @@ import { Scheduling } from "screens/Scheduling";
 import { SchedulingDetails } from "screens/SchedulingDetails";
 import { SchedulingComplete } from "screens/SchedulingComplete";
 import { createStackNavigator } from "@react-navigation/stack";
+import { CarDTO } from "dtos/CarDTO";
 
 const { Navigator, Screen } = createStackNavigator();
 
@@ -12,7 +13,7 @@ declare global {
   namespace ReactNavigation {
     interface RootParamList {
       Home: string;
-      CarDetails: string;
+      CarDetails: { car: CarDTO };
       Scheduling: string;
       SchedulingDetails: string;
       SchedulingComplete: string;

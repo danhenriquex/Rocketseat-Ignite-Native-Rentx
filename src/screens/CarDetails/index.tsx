@@ -27,54 +27,58 @@ import {
   Accessories,
   Footer,
 } from "./styles";
-import { useNavigation } from "@react-navigation/core";
+import { useNavigation, useRoute } from "@react-navigation/core";
+import { CarDTO } from "dtos/CarDTO";
+
+interface Params {
+  car: CarDTO;
+}
 
 export function CarDetails() {
   const navigation = useNavigation();
+  const route = useRoute();
+  const { car } = route.params as Params;
 
   function handleConfirmRental() {
     navigation.navigate("Scheduling");
   }
 
+  function handleBack() {
+    navigation.goBack();
+  }
+
   return (
     <Container>
       <Header>
-        <BackButton onPress={() => {}} />
+        <BackButton onPress={handleBack} />
       </Header>
 
       <CarImage>
-        <ImageSlider
-          imagesUrl={[
-            "https://www.pngkey.com/png/detail/383-3833840_rs-5-coup-price-from-audi-rs5-png.png",
-          ]}
-        />
+        <ImageSlider imagesUrl={car.photos} />
       </CarImage>
 
       <Content>
         <Details>
           <Description>
-            <Brand>Lamborghini</Brand>
-            <Name>Huracan</Name>
+            <Brand>{car.brand}</Brand>
+            <Name>{car.name}</Name>
           </Description>
           <Rent>
-            <Period>Ao dia</Period>
-            <Price>R$ 580</Price>
+            <Period>{car.rent.period}</Period>
+            <Price>R$ {car.rent.price}</Price>
           </Rent>
         </Details>
         <Accessories>
-          <Accessory icon={IconSpeed} name="380km/h" />
-          <Accessory icon={IconAcceleration} name="3.2s" />
-          <Accessory icon={IconForce} name="800 HP" />
-          <Accessory icon={IconGasoline} name="Gasolina" />
-          <Accessory icon={IconExchange} name="Auto" />
-          <Accessory icon={IconPeople} name="2 pessoas" />
+          {car?.accessories.map((accessory) => (
+            <Accessory
+              key={accessory.name}
+              name={accessory.name}
+              icon={IconAcceleration}
+            />
+          ))}
         </Accessories>
 
-        <About>
-          Este é automóvel desportivo. Surgiu do lendário touro de lide
-          indultado na praça Real Maestranza de Sevilla. É um belíssimo carro
-          para quem gosta de acelerar.
-        </About>
+        <About>{car.about}</About>
       </Content>
 
       <Footer>
