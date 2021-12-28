@@ -10,6 +10,7 @@ module.exports = function (api) {
           assets: './src/assets',
           modules: './src/modules',
           services: './src/services',
+          utils: './src/utils',
           lib: './src/lib',
           types: './src/types',
           screens: './src/screens',

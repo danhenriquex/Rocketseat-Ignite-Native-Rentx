@@ -280,7 +280,23 @@
         "2021-05-30",
         "2021-06-16",
         "2021-06-17",
-        "2021-06-18"
+        "2021-06-18",
+        "2021-12-22",
+        "2021-12-23",
+        "2021-12-24",
+        "2021-12-25",
+        "2021-12-26",
+        "2021-12-27",
+        "2021-12-28",
+        "2021-12-29",
+        "2021-12-30",
+        "2021-12-25",
+        "2021-12-26",
+        "2021-12-27",
+        "2021-12-28",
+        "2021-12-29",
+        "2021-12-30",
+        "2021-12-31"
       ]
     },
     {
@@ -313,7 +329,18 @@
         "2021-07-18",
         "2021-05-28",
         "2021-05-29",
-        "2021-05-30"
+        "2021-05-30",
+        "2021-12-23",
+        "2021-12-24",
+        "2021-12-25",
+        "2021-12-23",
+        "2021-12-24",
+        "2021-12-25",
+        "2021-12-26",
+        "2022-07-15",
+        "2022-07-16",
+        "2022-07-17",
+        "2022-07-18"
       ]
     },
     {
@@ -321,7 +348,26 @@
       "unavailable_dates": [
         "2021-06-19",
         "2021-06-20",
-        "2021-06-21"
+        "2021-06-21",
+        "2021-12-22",
+        "2021-12-23",
+        "2021-12-24",
+        "2021-12-25",
+        "2021-12-26",
+        "2021-12-27",
+        "2021-12-28",
+        "2021-12-29",
+        "2021-12-30",
+        "2021-12-31",
+        "2021-12-23",
+        "2021-12-24",
+        "2021-12-25",
+        "2021-12-26",
+        "2021-12-27",
+        "2021-12-28",
+        "2021-12-29",
+        "2021-12-23",
+        "2021-12-23"
       ]
     },
     {
@@ -335,14 +381,25 @@
         "2021-06-12",
         "2021-06-17",
         "2021-06-18",
-        "2021-06-19"
+        "2021-06-19",
+        "2021-12-23",
+        "2021-12-24"
       ]
     },
     {
       "id": "59626707-88c5-4877-9350-07f372c0905a",
       "unavailable_dates": [
         "2021-06-28",
-        "2021-06-29"
+        "2021-06-29",
+        "2021-12-23",
+        "2021-12-24",
+        "2021-12-25",
+        "2021-12-26",
+        "2021-12-27",
+        "2021-12-28",
+        "2021-12-29",
+        "2021-12-30",
+        "2021-12-31"
       ]
     }
   ],
@@ -1458,6 +1515,300 @@
       "startDate": "16/06/2021",
       "endDate": "18/06/2021",
       "id": 23
+    },
+    {
+      "user_id": 3333,
+      "car": {
+        "id": "49983f6c-a46a-4dfd-a86e-425b8c72e086",
+        "brand": "Lamborghini",
+        "name": "Huracan",
+        "about": "Este é automóvel desportivo. Surgiu do lendário touro de lide indultado na praça Real Maestranza de Sevilla. É um belíssimo carro para quem gosta de acelerar.",
+        "rent": {
+          "period": "Ao dia",
+          "price": 120
+        },
+        "fuel_type": "electric_motor",
+        "thumbnail": "https://storage.googleapis.com/golden-wind/ignite/react-native/thumbnails/4.png",
+        "accessories": [
+          {
+            "type": "speed",
+            "name": "380km/h"
+          },
+          {
+            "type": "acceleration",
+            "name": "3.2s"
+          },
+          {
+            "type": "turning_diameter",
+            "name": "800 HP"
+          },
+          {
+            "type": "electric_motor",
+            "name": "Elétrico"
+          },
+          {
+            "type": "exchange",
+            "name": "Auto"
+          },
+          {
+            "type": "seats",
+            "name": "2 pessoas"
+          }
+        ],
+        "photos": [
+          "https://storage.googleapis.com/golden-wind/ignite/react-native/images/9.png",
+          "https://storage.googleapis.com/golden-wind/ignite/react-native/images/10.png",
+          "https://storage.googleapis.com/golden-wind/ignite/react-native/images/11.png"
+        ]
+      },
+      "startDate": "23/12/2021",
+      "endDate": "29/12/2021",
+      "id": 24
+    },
+    {
+      "user_id": 3333,
+      "car": {
+        "id": "52930821-cbea-4b05-9f45-7c02b1bb0d8c",
+        "brand": "Chevrolet",
+        "name": "Corvette Z06",
+        "about": "O Chevrolet Corvette Z06 inclui freios Brembo de alto desempenho com pinças maiores no conjunto dianteiro, itens aerodinâmicos com capô de fibra de carbono, suspensão para alto desempenho.",
+        "rent": {
+          "period": "Ao dia",
+          "price": 620
+        },
+        "fuel_type": "gasoline_motor",
+        "thumbnail": "https://storage.googleapis.com/golden-wind/ignite/react-native/thumbnails/3.png",
+        "accessories": [
+          {
+            "type": "speed",
+            "name": "330km/h"
+          },
+          {
+            "type": "acceleration",
+            "name": "6.2s"
+          },
+          {
+            "type": "turning_diameter",
+            "name": "900 HP"
+          },
+          {
+            "type": "gasoline_motor",
+            "name": "Gasoline"
+          },
+          {
+            "type": "exchange",
+            "name": "Auto"
+          },
+          {
+            "type": "seats",
+            "name": "2 pessoas"
+          }
+        ],
+        "photos": [
+          "https://storage.googleapis.com/golden-wind/ignite/react-native/images/6.png",
+          "https://storage.googleapis.com/golden-wind/ignite/react-native/images/7.png",
+          "https://storage.googleapis.com/golden-wind/ignite/react-native/images/8.png"
+        ]
+      },
+      "startDate": "15/07/2022",
+      "endDate": "18/07/2022",
+      "id": 25
+    },
+    {
+      "user_id": 3333,
+      "car": {
+        "id": "49983f6c-a46a-4dfd-a86e-425b8c72e086",
+        "brand": "Lamborghini",
+        "name": "Huracan",
+        "about": "Este é automóvel desportivo. Surgiu do lendário touro de lide indultado na praça Real Maestranza de Sevilla. É um belíssimo carro para quem gosta de acelerar.",
+        "rent": {
+          "period": "Ao dia",
+          "price": 120
+        },
+        "fuel_type": "electric_motor",
+        "thumbnail": "https://storage.googleapis.com/golden-wind/ignite/react-native/thumbnails/4.png",
+        "accessories": [
+          {
+            "type": "speed",
+            "name": "380km/h"
+          },
+          {
+            "type": "acceleration",
+            "name": "3.2s"
+          },
+          {
+            "type": "turning_diameter",
+            "name": "800 HP"
+          },
+          {
+            "type": "electric_motor",
+            "name": "Elétrico"
+          },
+          {
+            "type": "exchange",
+            "name": "Auto"
+          },
+          {
+            "type": "seats",
+            "name": "2 pessoas"
+          }
+        ],
+        "photos": [
+          "https://storage.googleapis.com/golden-wind/ignite/react-native/images/9.png",
+          "https://storage.googleapis.com/golden-wind/ignite/react-native/images/10.png",
+          "https://storage.googleapis.com/golden-wind/ignite/react-native/images/11.png"
+        ]
+      },
+      "startDate": "23/12/2021",
+      "endDate": "23/12/2021",
+      "id": 26
+    },
+    {
+      "user_id": 3333,
+      "car": {
+        "id": "49983f6c-a46a-4dfd-a86e-425b8c72e086",
+        "brand": "Lamborghini",
+        "name": "Huracan",
+        "about": "Este é automóvel desportivo. Surgiu do lendário touro de lide indultado na praça Real Maestranza de Sevilla. É um belíssimo carro para quem gosta de acelerar.",
+        "rent": {
+          "period": "Ao dia",
+          "price": 120
+        },
+        "fuel_type": "electric_motor",
+        "thumbnail": "https://storage.googleapis.com/golden-wind/ignite/react-native/thumbnails/4.png",
+        "accessories": [
+          {
+            "type": "speed",
+            "name": "380km/h"
+          },
+          {
+            "type": "acceleration",
+            "name": "3.2s"
+          },
+          {
+            "type": "turning_diameter",
+            "name": "800 HP"
+          },
+          {
+            "type": "electric_motor",
+            "name": "Elétrico"
+          },
+          {
+            "type": "exchange",
+            "name": "Auto"
+          },
+          {
+            "type": "seats",
+            "name": "2 pessoas"
+          }
+        ],
+        "photos": [
+          "https://storage.googleapis.com/golden-wind/ignite/react-native/images/9.png",
+          "https://storage.googleapis.com/golden-wind/ignite/react-native/images/10.png",
+          "https://storage.googleapis.com/golden-wind/ignite/react-native/images/11.png"
+        ]
+      },
+      "startDate": "23/12/2021",
+      "endDate": "23/12/2021",
+      "id": 27
+    },
+    {
+      "user_id": 3333,
+      "car": {
+        "id": "508e7193-0078-4615-9071-920b59038fda",
+        "brand": "volvo",
+        "name": "XC40",
+        "about": "A Poderosa Combinação de um Motor Elétrico de Alto Desempenho e um Motor a Combustão. Compacto e Inovador. Com Design Expressivo, Tecnologias Intuitivas e Estilo Urbano.",
+        "rent": {
+          "period": "Ao dia",
+          "price": 120
+        },
+        "fuel_type": "gasoline_motor",
+        "thumbnail": "https://storage.googleapis.com/golden-wind/ignite/react-native/thumbnails/5.png",
+        "accessories": [
+          {
+            "type": "speed",
+            "name": "180km/h"
+          },
+          {
+            "type": "acceleration",
+            "name": "1.5s"
+          },
+          {
+            "type": "turning_diameter",
+            "name": "600 HP"
+          },
+          {
+            "type": "gasoline_motor",
+            "name": "Gasolina"
+          },
+          {
+            "type": "exchange",
+            "name": "Auto"
+          },
+          {
+            "type": "seats",
+            "name": "5 pessoas"
+          }
+        ],
+        "photos": [
+          "https://storage.googleapis.com/golden-wind/ignite/react-native/images/12.png",
+          "https://storage.googleapis.com/golden-wind/ignite/react-native/images/13.png",
+          "https://storage.googleapis.com/golden-wind/ignite/react-native/images/14.png"
+        ]
+      },
+      "startDate": "23/12/2021",
+      "endDate": "24/12/2021",
+      "id": 28
+    },
+    {
+      "user_id": 3333,
+      "car": {
+        "id": "59626707-88c5-4877-9350-07f372c0905a",
+        "brand": "mitsubishi",
+        "name": "Lancer",
+        "about": "Mitsubishi Lancer é um belo e agressivo carro. Além do mais, ele encanta pelo conforto e pela eficiência. Bastante firme e estável para dirigir com tranquilidade e segurança.",
+        "rent": {
+          "period": "Ao dia",
+          "price": 220
+        },
+        "fuel_type": "hybrid_motor",
+        "thumbnail": "https://storage.googleapis.com/golden-wind/ignite/react-native/thumbnails/6.png",
+        "accessories": [
+          {
+            "type": "speed",
+            "name": "180km/h"
+          },
+          {
+            "type": "acceleration",
+            "name": "2.0s"
+          },
+          {
+            "type": "turning_diameter",
+            "name": "600 HP"
+          },
+          {
+            "type": "hybrid_motor",
+            "name": "Híbrido"
+          },
+          {
+            "type": "exchange",
+            "name": "Auto"
+          },
+          {
+            "type": "seats",
+            "name": "5 pessoas"
+          }
+        ],
+        "photos": [
+          "https://storage.googleapis.com/golden-wind/ignite/react-native/images/15.png",
+          "https://storage.googleapis.com/golden-wind/ignite/react-native/images/16.png",
+          "https://storage.googleapis.com/golden-wind/ignite/react-native/images/17.png"
+        ]
+      },
+      "startDate": "23/12/2021",
+      "endDate": "31/12/2021",
+      "id": 29
     }
   ]
 }

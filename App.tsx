@@ -12,7 +12,6 @@ import {
 } from "@expo-google-fonts/inter";
 import AppLoading from "expo-app-loading";
 import React from "react";
-import "react-native-gesture-handler";
 import { Routes } from "routes";
 import { StackRoutes } from "routes/stack.routes";
 import { ThemeProvider } from "styled-components";

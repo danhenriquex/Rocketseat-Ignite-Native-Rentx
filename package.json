@@ -5,7 +5,7 @@
     "ios": "react-native run-ios",
     "web": "expo start --web",
     "start": "react-native start",
-    "server": "json-server ./src/services/server.json --host 192.168.0.12 --port 3333 --delay 700"
+    "server": "json-server ./src/services/server.json --host 192.168.0.6 --port 3333 --delay 700"
   },
   "dependencies": {
     "@expo-google-fonts/archivo": "^0.2.0",
@@ -13,7 +13,9 @@
     "@react-navigation/native": "^6.0.6",
     "@react-navigation/stack": "^6.0.11",
     "@types/react-native-calendars": "^1.1264.3",
+    "@types/uuid": "^8.3.3",
     "axios": "^0.24.0",
+    "date-fns": "^2.27.0",
     "expo": "~42.0.1",
     "expo-app-loading": "^1.1.2",
     "expo-font": "~9.2.1",
@@ -21,6 +23,7 @@
     "expo-status-bar": "~1.0.4",
     "expo-updates": "~0.8.1",
     "intl": "^1.2.5",
+    "lottie-react-native": "4.0.2",
     "react": "16.13.1",
     "react-dom": "16.13.1",
     "react-native": "~0.63.4",
@@ -34,7 +37,8 @@
     "react-native-svg": "12.1.1",
     "react-native-unimodules": "0.14.10",
     "react-native-web": "~0.13.12",
-    "styled-components": "^5.3.1"
+    "styled-components": "^5.3.1",
+    "uuid": "^8.3.2"
   },
   "devDependencies": {
     "@babel/core": "^7.9.0",
