@@ -12,3 +12,4 @@ export { default as IconLogoBackgroundGray } from "./logo_background_gray.svg";
 export { default as IconLogo } from "./logo.svg";
 export { default as IconPeople } from "./people.svg";
 export { default as IconSpeed } from "./speed.svg";
+export { default as IconHome } from "./home.svg";

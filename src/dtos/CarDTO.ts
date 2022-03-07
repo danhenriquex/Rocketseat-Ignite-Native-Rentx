@@ -1,17 +1,26 @@
+export interface PhotoProps {
+  id: string;
+  car_id: string;
+  photo: string;
+}
+
+export interface AccssoriesProps {
+  id: string;
+  car_id: string;
+  name: string;
+  type: string;
+}
 export interface CarDTO {
   id: string;
-  brand: string;
   name: string;
+  brand: string;
   about: string;
-  rent: {
-    period: string;
-    price: number;
-  };
+  period: string;
+  price: number;
   fuel_type: string;
   thumbnail: string;
-  accessories: {
-    type: string;
-    name: string;
-  }[];
-  photos: string[];
+  created_at: number;
+  updated_at: number;
+  photos: PhotoProps[];
+  accessories: AccssoriesProps[];
 }

@@ -13,9 +13,10 @@ import {
 import AppLoading from "expo-app-loading";
 import React from "react";
 import { Routes } from "routes";
-import { StackRoutes } from "routes/stack.routes";
+import { AppStackRoutes } from "routes/app.stack.routes";
 import { ThemeProvider } from "styled-components";
 import theme from "styles/theme";
+import { AppProvider } from "hooks";
 
 export default function App() {
   const [fontsLoaded] = useFonts({
@@ -32,7 +33,9 @@ export default function App() {
 
   return (
     <ThemeProvider theme={theme}>
-      <Routes />
+      <AppProvider>
+        <Routes />
+      </AppProvider>
     </ThemeProvider>
   );
 }

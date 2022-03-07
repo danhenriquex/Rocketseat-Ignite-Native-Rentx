@@ -69,29 +69,39 @@ export function Home() {
     navigation.navigate("CarDetails", { car });
   }
 
-  function handleOpenMyCars() {
-    navigation.navigate("MyCars");
-  }
+  // function handleOpenMyCars() {
+  //   navigation.navigate("MyCars");
+  // }
 
   useEffect(() => {
+    let isMounted = true;
+
     async function fetchCars() {
       try {
         const response = await api.get("/cars");
-        setCars(response.data);
+        if (isMounted) {
+          setCars(response.data);
+        }
       } catch (error) {
         console.error(error);
       } finally {
-        setLoading(false);
+        if (isMounted) {
+          setLoading(false);
+        }
       }
     }
     fetchCars();
+
+    return () => {
+      isMounted = false;
+    };
   }, []);
 
-  useEffect(() => {
-    BackHandler.addEventListener("hardwareBackPress", () => {
-      return true;
-    });
-  }, []);
+  // useEffect(() => {
+  //   BackHandler.addEventListener("hardwareBackPress", () => {
+  //     return true;
+  //   });
+  // }, []);
 
   return (
     <Container>
@@ -118,7 +128,7 @@ export function Home() {
           )}
         />
       )}
-      <PanGestureHandler onGestureEvent={onGestureEvent}>
+      {/* <PanGestureHandler onGestureEvent={onGestureEvent}>
         <Animated.View
           style={[
             myCarsButtonStyle,
@@ -133,18 +143,18 @@ export function Home() {
             />
           </ButtonAnimated>
         </Animated.View>
-      </PanGestureHandler>
+      </PanGestureHandler> */}
     </Container>
   );
 }
 
-const styles = StyleSheet.create({
-  button: {
-    width: 60,
-    height: 60,
-    borderRadius: 30,
-    justifyContent: "center",
-    alignItems: "center",
-    backgroundColor: "#dc1637",
-  },
-});
+// const styles = StyleSheet.create({
+//   button: {
+//     width: 60,
+//     height: 60,
+//     borderRadius: 30,
+//     justifyContent: "center",
+//     alignItems: "center",
+//     backgroundColor: "#dc1637",
+//   },
+// });

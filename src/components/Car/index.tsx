@@ -31,12 +31,12 @@ export function Car({ data, ...rest }: Props) {
 
         <About>
           <Rent>
-            <Period>{data.rent.period}</Period>
+            <Period>{data.period}</Period>
             <Price>
               {Intl.NumberFormat("pt-BR", {
                 style: "currency",
                 currency: "BRL",
-              }).format(data.rent.price)}
+              }).format(data.price)}
             </Price>
           </Rent>
 
