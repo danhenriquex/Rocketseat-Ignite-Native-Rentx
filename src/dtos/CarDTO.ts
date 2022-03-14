@@ -1,6 +1,5 @@
 export interface PhotoProps {
   id: string;
-  car_id: string;
   photo: string;
 }
 

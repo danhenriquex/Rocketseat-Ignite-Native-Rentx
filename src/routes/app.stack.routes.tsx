@@ -14,6 +14,7 @@ import {
   ValidateFirstStep,
 } from "screens/SignUp/SignUpFirstStep";
 import { SignUpSecondStep } from "screens/SignUp/SignUpSecondStep";
+import { Car } from "database/model/Car";
 
 const { Navigator, Screen } = createStackNavigator();
 
@@ -23,8 +24,8 @@ declare global {
       Home: string;
       SignUpFirstStep: string;
       SignUpSecondStep: { user: ValidateFirstStep };
-      CarDetails: { car: CarDTO };
-      Scheduling: { car: CarDTO };
+      CarDetails: { car: Car };
+      Scheduling: { car: Car };
       SchedulingDetails: {
         car: CarDTO;
         dates: string[];

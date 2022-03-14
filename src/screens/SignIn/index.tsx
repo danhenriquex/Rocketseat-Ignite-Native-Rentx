@@ -36,8 +36,6 @@ export function SignIn() {
       await schema.validate({ email, password });
 
       await signIn({ email, password });
-
-      Alert.alert("Logado com sucesso");
     } catch (error) {
       if (error instanceof Yup.ValidationError) {
         Alert.alert("Erro na validação", error.message);

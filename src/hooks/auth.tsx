@@ -27,6 +27,9 @@ interface SignCredentials {
 interface AuthContextData {
   user: User;
   signIn: (credentials: SignCredentials) => Promise<void>;
+  signOut: () => Promise<void>;
+  updatedUser: (user: User) => Promise<void>;
+  loading: boolean;
 }
 
 interface AuthProviderProps {
@@ -37,6 +40,7 @@ const AuthContext = createContext<AuthContextData>({} as AuthContextData);
 
 function AuthProvider({ children }: AuthProviderProps) {
   const [data, setData] = useState<User>({} as User);
+  const [loading, setLoading] = useState(true);
 
   async function signIn(credentials: SignCredentials): Promise<void> {
     try {
@@ -49,15 +53,51 @@ function AuthProvider({ children }: AuthProviderProps) {
       const userCollection = database.get<ModelUser>("users");
       await database.write(async () => {
         await userCollection.create((newUser) => {
-          newUser.user_id = user.user_id;
+          newUser.user_id = user.id;
           newUser.name = user.name;
           newUser.email = user.email;
           newUser.driver_license = user.driver_license;
           newUser.avatar = user.avatar;
+          newUser.token = token;
         });
       });
 
       setData({ ...user, token });
+    } catch (error) {
+      throw new Error(error);
+    }
+  }
+
+  async function signOut() {
+    try {
+      const userCollection = database.get<ModelUser>("users");
+
+      await database.write(async () => {
+        const userSelected = await userCollection.find(data.id);
+        await userSelected.destroyPermanently();
+      });
+
+      setData({} as User);
+    } catch (error) {
+      throw new Error(error);
+    }
+  }
+
+  async function updatedUser(user: User) {
+    try {
+      const userCollection = database.get<ModelUser>("users");
+
+      await database.write(async () => {
+        const userSelected = await userCollection.find(user.id);
+        console.log(userSelected);
+        await userSelected.update((userData) => {
+          (userData.name = user.name),
+            (userData.driver_license = user.driver_license),
+            (userData.avatar = user.avatar);
+        });
+      });
+
+      setData(user);
     } catch (error) {
       throw new Error(error);
     }
@@ -76,12 +116,17 @@ function AuthProvider({ children }: AuthProviderProps) {
         ] = `Bearer ${userData.token}`;
         setData(userData);
       }
+      setLoading(false);
     }
     loadUserData();
-  }, []);
+  });
 
   return (
-    <AuthContext.Provider value={{ signIn, user: data } as AuthContextData}>
+    <AuthContext.Provider
+      value={
+        { signIn, user: data, signOut, updatedUser, loading } as AuthContextData
+      }
+    >
       {children}
     </AuthContext.Provider>
   );
