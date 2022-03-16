@@ -39,7 +39,7 @@ Figma: https://www.figma.com/file/e8Kkb8QImQV0Z0F8WXkgju/RentX-Ignite---Offline-
 <div id="features">
 
 - [x] Day 01 - Interface: Screens, Input email, Input password, accessibility, forms, forms validation. Images: Svg, themes.
-- [x] Day 04 - Consuming API with JsonServer and axios. Passing data between screens, creating calendar and listing cars.
+- [x] Day 04 - Consuming API with JsonServer and axios. Passing data between screens, creating calendar, listing cars and creating appointments.
 - [x] Day 05 - Animation with React Reanimated, splash screen and animation with lottie.
 - [x] Day 02 - Auth, navigation with BottomTab and private routes.
 - [x] Day 03 - Offline First: configuration of WatermelonDB, fast image loading. It is possible to save the profile and get the latest update of the cars when online.
