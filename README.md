@@ -1,4 +1,4 @@
-<h1 align="center">🎮 Rentx</h1>
+<h1 align="center">🚗 Rentx</h1>
 <p align="center" id="objetivo">Project made during Ignite that consists of a mobile application where the user can create an account, see the profile, rent a car and see the appointments made.</p>
 
 <div align="center" gap="10px">
@@ -8,7 +8,7 @@
 </div>
 
 <h1 align="center">
-    <a href="https://reactnative.dev/"> <img src="./src/screenshots/favicon.ico" width="22" height="22"/> React Native</a>
+    <a href="https://reactnative.dev/"> <img src="" width="22" height="22"/> React Native</a>
 </h1>
 <p align="center">🚀 React Native combines the best parts of native development with React, a best-in-class JavaScript library for building user interfaces.</p>
 
