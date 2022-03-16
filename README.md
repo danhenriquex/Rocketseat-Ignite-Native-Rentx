@@ -26,7 +26,7 @@
 
 <div style='margin: 20px' id="layout">
   <h1 align="center">
-    <img alt="NextLevelWeek" title="#NextLevelWeek" src="./screenshots/rentx.jpeg" />
+    <img alt="NextLevelWeek" title="#NextLevelWeek" src="" />
   </h1>
 </div>
 
