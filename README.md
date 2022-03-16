@@ -24,6 +24,10 @@
 	🚧  React Native App 🚀 Finished  🚧
 </h4>
 
+### Layout
+
+Figma: https://www.figma.com/file/e8Kkb8QImQV0Z0F8WXkgju/RentX-Ignite---Offline-First?node-id=0%3A1
+
 <div style='margin: 20px' id="layout">
   <h1 align="center">
     <img alt="NextLevelWeek" title="#NextLevelWeek" src="./src/screenshots/rentx.jpeg" />
