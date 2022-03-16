@@ -1,4 +1,4 @@
-<h1 align="center">🎮 Gameplay</h1>
+<h1 align="center">🎮 Rentx</h1>
 <p align="center" id="objetivo">Project made during Ignite that consists of a mobile application where the user can create an account, see the profile, rent a car and see the appointments made.</p>
 
 <div align="center" gap="10px">
@@ -26,7 +26,7 @@
 
 <div style='margin: 20px' id="layout">
   <h1 align="center">
-    <img alt="NextLevelWeek" title="#NextLevelWeek" src="" />
+    <img alt="NextLevelWeek" title="#NextLevelWeek" src="./screenshots/rentx.jpeg" />
   </h1>
 </div>
 
