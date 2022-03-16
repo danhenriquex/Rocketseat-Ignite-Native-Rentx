@@ -8,7 +8,7 @@
 </div>
 
 <h1 align="center">
-    <a href="https://reactnative.dev/"> <img src="./src/screenshots/favicon.ico" width="22" height="22"/> React Native</a>
+    <a href="https://reactnative.dev/"> <img src="./src/screenshots/rentx.jpeg" width="22" height="22"/> React Native</a>
 </h1>
 <p align="center">🚀 React Native combines the best parts of native development with React, a best-in-class JavaScript library for building user interfaces.</p>
 
