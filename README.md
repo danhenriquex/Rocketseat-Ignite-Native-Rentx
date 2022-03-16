@@ -71,8 +71,24 @@ $ yarn react-native start
 $ yarn react-native run-android
 
 
-
 ```
+### Running the mobile application (BackEnd)
+	
+```bash
+	
+# Clone this repository
+$ git clone https://github.com/rodrigorgtic/rentx-api-ignite
+
+# Access the project folder in your terminal/cmd
+$ cd rentx-api-ignite
+
+# Install the dependencies
+$ yarn install
+
+# Run the application in development mode
+$ yarn start
+```
+
 
 </div>
 
