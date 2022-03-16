@@ -58,7 +58,7 @@ In addition, it is good to have an editor to work with the code like [VSCode](ht
 
 ```bash
 # Clone this repository
-$ git clone git@github.com:danhenriquex/Rocketseat-Ignite-Native-Rentx.git
+$ git clone https://github.com/danhenriquex/Rocketseat-Ignite-Native-Rentx.git
 
 # Access the project folder in your terminal/cmd
 $ cd Rocketseat-Ignite-Native-Rentx
